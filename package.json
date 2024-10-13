@@ -1,12 +1,13 @@
 {
-  "name": "api-manut",
+  "name": "manutencao-api",
   "version": "0.0.0",
   "description": "API de controle da programação da manutenção",
   "main": "src/server.ts",
-  "author": "Arthur Torres",
+  "repository": "https://github.com/ViacaoPraiaSol/API-Manut-PraiaSol.git",
+  "author": "Arthur Torres <arthurjtorres@outlook.com.br>",
   "license": "MIT",
 
-"scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsnd ."
   },
@@ -35,3 +36,4 @@
     "@types/uuid": "^9.0.8"
   }
 }
+
