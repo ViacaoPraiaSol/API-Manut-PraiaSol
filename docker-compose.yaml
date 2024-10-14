@@ -1,0 +1,23 @@
+services:
+  manut_application:
+    build: .
+    ports:
+      - 7070:7070
+    environment:
+      - DB_USER=postgres
+      - DB_PASS=admin
+      - DB_NAME=DB_SolturaManut
+      - DB_HOST=cadastro_db
+    volumes:
+      - .:/api-manutencao
+    container_name: manut_api
+    restart: always
+    networks:
+      - soltura_manut
+
+networks:
+  soltura_manut:
+    external: true
+
+
+
